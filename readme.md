@@ -81,7 +81,7 @@ npm run dev
 
 ## Endpoints
 
-### Transactions Microservicio (http://localhost:3001/api/transacciones)
+### Transactions Microservicio (http://localhost:3000/api/transacciones)
 
 - **POST** `/`  
   Crear una nueva transacción.
@@ -152,8 +152,8 @@ Para poblar la base de datos del microservicio de **Transactions** con datos de 
 
 ---
 
-## Consideraciones Adicionales
+## Consideraciones Adicionales no Desarrolladas
 
 - **Manejo de Errores**: Cada servicio debería manejar de forma adecuada los errores y responder con el código de estado HTTP correspondiente.
-- **Seguridad**: Considerar el uso de tokens de autenticación (JWT) o un Gateway centralizado para manejar la seguridad y el enrutamiento.
-- **Despliegue**: Para entornos de producción, se recomienda contenerizar cada microservicio usando Docker y orquestarlos con Kubernetes o Docker Compose.
+- **Seguridad**: Uso de tokens de autenticación (JWT) o un Gateway centralizado para manejar la seguridad y el enrutamiento.
+- **Despliegue**: Contenerizar cada microservicio usando Docker y orquestarlos con Kubernetes o Docker Compose.
