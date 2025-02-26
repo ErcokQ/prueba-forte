@@ -152,7 +152,6 @@ Para poblar la base de datos del microservicio de **Transactions** con datos de 
 
 ---
 
-## Consideraciones Adicionales no Desarrolladas
 ## Consideraciones Adicionales no desarrolladas
 
 - **Manejo de Errores**: Cada servicio debería manejar de forma adecuada los errores y responder con el código de estado HTTP correspondiente.
