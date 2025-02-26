@@ -21,11 +21,22 @@ Este proyecto es una aplicación de gestión financiera compuesta por varios mic
 
 La aplicación se ha desarrollado siguiendo un **patrón de microservicios** en un monorepo. Cada microservicio es un proyecto independiente que se comunica vía HTTP. Además, se utiliza un patrón basado en eventos para notificar acciones entre servicios (por ejemplo, el microservicio de Transactions emite un evento `transactionCreated` que puede ser consumido por otros servicios).
 
+## Tecnologias utilizadas
+
+Vue v3
+Node Js (Express)
+Mongo DB
+Tailwind
+
 # Prerequisitos
 
 - **Node.js** (versión 14 o superior)
-- **npm** o **yarn**
+- **npm** 
 - **MongoDB** instalado y en ejecución (local o remoto)
+
+## Acceso al aplicativo
+  Usuario: admin
+  Password: admin
 
 ## Instalación
 
@@ -151,6 +162,10 @@ Para poblar la base de datos del microservicio de **Transactions** con datos de 
    El script se encargará de **borrar los datos existentes** .
 
 ---
+
+## Consideracion Adicionales
+
+ Para la simulación de servicios de AWS como Lambda y S3, se utilzo un patron en base eventos que es la manera en la que trabaja Lambda y S3 es un bucket de almacenamiento por lo que los reportes al guardarlos en una carpeta local simulan el funcionamiento.
 
 ## Consideraciones Adicionales no desarrolladas
 
