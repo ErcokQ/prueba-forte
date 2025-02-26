@@ -53,7 +53,7 @@ Cada microservicio utiliza variables de entorno. Crea un archivo `.env` en la ca
 Por ejemplo, en **Transactions** podrías tener:
 
     ```ini
-    PORT=3001
+    PORT=3000
     MONGO_URI=mongodb://127.0.0.1:27017/Finance-manager
     ```
 En Reports:
@@ -153,6 +153,7 @@ Para poblar la base de datos del microservicio de **Transactions** con datos de 
 ---
 
 ## Consideraciones Adicionales no Desarrolladas
+## Consideraciones Adicionales no desarrolladas
 
 - **Manejo de Errores**: Cada servicio debería manejar de forma adecuada los errores y responder con el código de estado HTTP correspondiente.
 - **Seguridad**: Uso de tokens de autenticación (JWT) o un Gateway centralizado para manejar la seguridad y el enrutamiento.
